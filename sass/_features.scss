@@ -1,0 +1,46 @@
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+
+    display: block;
+    margin-bottom: 50px;
+}
+
+/* верхние h3 */
+.title {
+    margin-bottom: 10px;
+}
+
+.feature-list .title {
+    font-size: 14px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--secondary-bgr-color);
+}
+
+.features-descr {
+    line-height: 1.7;
+}
