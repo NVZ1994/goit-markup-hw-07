@@ -34,10 +34,10 @@
 
 .navigation__list-link {
     display: block;
-}
 
-.navigation__list-link:not(:first-child) {
-    margin-left: 50px;
+    &:not(:first-child) {
+        margin-left: 50px;
+    }
 }
 
 .navigation__list {
@@ -48,9 +48,11 @@
     display: flex;
 }
 
-.navigation__list a:hover,
-.navigation__list a:focus {
-    color: var(--accent-text-color);
+.navigation__list {
+    a:hover,
+    a:focus {
+        color: var(--accent-text-color);
+    }
 }
 
 .authentication {
@@ -62,13 +64,17 @@
     margin-left: auto;
 }
 
-.authentication a:hover,
-.authentication a:focus {
-    color: var(--accent-text-color);
-}
-.authentication a:hover svg,
-.authentication a:focus svg {
-    fill: var(--accent-text-color);
+.authentication {
+
+    a:hover,
+    a:focus {
+        color: var(--accent-text-color);
+    }
+
+    a:hover svg,
+    a:focus svg {
+        fill: var(--accent-text-color);
+    }
 }
 
 .authentication__email {
