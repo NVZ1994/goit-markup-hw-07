@@ -1,9 +1,9 @@
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
 }
 
-header {
+.header {
     border-bottom: 1px solid var(--primary-border-color);
 }
 
@@ -18,57 +18,29 @@ header {
     padding: 24px 0 25px 0;
 }
 
-a span {
+.navigation__logo--black {
     color: var(--accent-text-color);
 }
-.header-nav {
+.navigation {
     display: flex;
     justify-content: space-between;
 }
 
-.link {
+.navigation__list-item {
     padding: 32px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.phone-header {
-    margin-left: 50px;
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
-    color: var(--contacts-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-icon,
-.phone-icon {
-    margin-right: 10px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.auth-nav-list a:hover svg,
-.auth-nav-list a:focus svg {
-    fill: var(--accent-text-color);
-}
-
-.email {
-    padding: 32px 0;
-    color: var(--contacts-color);
-    display: flex;
-    align-items: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link {
+.navigation__list-link {
     display: block;
 }
 
-.nav-link:not(:first-child) {
+.navigation__list-link:not(:first-child) {
     margin-left: 50px;
 }
 
-.site-nav-list {
+.navigation__list {
     font-weight: 500;
     line-height: 1.14;
     color: var(--title-text-color);
@@ -76,11 +48,12 @@ a span {
     display: flex;
 }
 
-.site-nav-list a:hover,
-.site-nav-list a:focus {
+.navigation__list a:hover,
+.navigation__list a:focus {
     color: var(--accent-text-color);
 }
-.auth-nav-list {
+
+.authentication {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -89,7 +62,34 @@ a span {
     margin-left: auto;
 }
 
-.auth-nav-list a:hover,
-.auth-nav-list a:focus {
+.authentication a:hover,
+.authentication a:focus {
     color: var(--accent-text-color);
+}
+.authentication a:hover svg,
+.authentication a:focus svg {
+    fill: var(--accent-text-color);
+}
+
+.authentication__email {
+    padding: 32px 0;
+    color: var(--contacts-color);
+    display: flex;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.authentication__phone {
+    margin-left: 50px;
+    padding: 32px 0;
+    display: flex;
+    align-items: center;
+    color: var(--contacts-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.authentication__email-icon,
+.authentication__phone-icon {
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
