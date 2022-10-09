@@ -8,7 +8,7 @@
     margin-bottom: 50px;
 }
 
-.section__title-list {
+.features__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -16,16 +16,15 @@
     flex-wrap: nowrap;
 }
 
-.title {
-    margin-bottom: 10px;
-}
 
-.feature-list .title {
+
+.features__list-title {
     font-size: 14px;
     color: var(--title-text-color);
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .feature-icon {
@@ -39,6 +38,6 @@
     background-color: var(--secondary-bgr-color);
 }
 
-.features-descr {
+.features__descr {
     line-height: 1.7;
 }
